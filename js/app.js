@@ -14,7 +14,7 @@ const handleFormSubmit = function(event) {
     const resultList = document.querySelector('#animal-list');
     const newListItem = document.createElement('li');
     newListItem.classList.add('list-item');
-    newListItem.textContent = `Name: ${event.target.name.value} | Species: ${event.target.species.value} | Country: ${event.target.country.value}`;
+    newListItem.textContent = `Name: ${event.target.name.value} | Species: ${event.target.species.value} | Country: ${event.target.country.value} | Category: ${event.target.animal.value}`;
     resultList.appendChild(newListItem);
     form.reset();
 }
